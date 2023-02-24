@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using AndroidX.Core.Content;
 using System.Collections.Generic;
+using Xamarin.Forms.GoogleMaps.Android;
 
 namespace XamarinGoogleMapSample.Droid
 {
@@ -17,7 +18,14 @@ namespace XamarinGoogleMapSample.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
-            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
+
+            var platformConfig = new PlatformConfig
+            {
+                BitmapDescriptorFactory = new CachingNativeBitmapDescriptorFactory()
+            };
+
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState, platformConfig);
+            //Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             PermissionCheck();
             LoadApplication(new App());
         }

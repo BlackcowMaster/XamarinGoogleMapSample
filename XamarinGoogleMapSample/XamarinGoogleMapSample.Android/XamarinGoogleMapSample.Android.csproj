@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppSettingsInterface.cs" />
+    <Compile Include="CachingNativeBitmapDescriptorFactory.cs" />
     <Compile Include="CustomMapRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
