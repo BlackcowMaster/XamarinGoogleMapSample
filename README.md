@@ -13,6 +13,8 @@ https://open.kakao.com/o/g8lzoOm
 - 현재 위치에서 재검색은 서버와 통신하신 후에 가져오고 그리고 중심점과 원, 핀 등을 그리시면 되겠습니다
 - CustomMap이란 걸 별도로 구현하여 Android에 적용하였습니다
 
+
+
 [Android]
 
 1. Manifest에 권한 설정이 되어 있으며 "APIKEY"를 구글 개발자 콘솔에서 맵 API를 발급 하신 후 교체하시면 됩니다
@@ -25,6 +27,8 @@ https://open.kakao.com/o/g8lzoOm
    Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
    
 4. CachingNativeBitmapDescriptorFactory를 추가로 구현되어 있지만 FFImageLoading을 사용하는 경우엔 크게 필요하진 않습니다
+
+
 
 [iOS]
 1. App.Delegate.cs에 다음과 같이 선언해주십시오
