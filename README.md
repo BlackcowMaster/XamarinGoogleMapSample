@@ -8,10 +8,10 @@ MAUI 샘플에서 뵙겠습니다.
 https://open.kakao.com/o/g8lzoOm
 
 [개발 참고사항]
-- Circle은 보여지는 부분보다 크게 비율을 잡아서 그리는게 필요합니다. 원을 그린다고 해도 실제 핀들의 중심보다 작게 그립니다
-- 초심자가 보고 이해할 수 있도록 MVVM 버전과 그렇지 않은 버전을 분리했습니다
-- 현재 위치에서 재검색은 서버와 통신하신 후에 가져오고 그리고 중심점과 원, 핀 등을 그리시면 되겠습니다
-- CustomMap이란 걸 별도로 구현하여 Android에 적용하였습니다
+   - Circle은 보여지는 부분보다 크게 비율을 잡아서 그리는게 필요합니다. 원을 그린다고 해도 실제 핀들의 중심보다 작게 그립니다
+   - 초심자가 보고 이해할 수 있도록 MVVM 버전과 그렇지 않은 버전을 분리했습니다
+   - 현재 위치에서 재검색은 서버와 통신하신 후에 가져오고 그리고 중심점과 원, 핀 등을 그리시면 되겠습니다
+   - CustomMap이란 걸 별도로 구현하여 Android에 적용하였습니다
 
 
 
@@ -32,7 +32,7 @@ https://open.kakao.com/o/g8lzoOm
 
 [iOS]
 1. App.Delegate.cs에 다음과 같이 선언해주십시오
--> Xamarin.FormsGoogleMaps.Init("API KEY"); // Google Maps API for iOS 생성
+   - Xamarin.FormsGoogleMaps.Init("API KEY"); // Google Maps API for iOS 생성
 
 2. Info.plist에서 다음과 같이 선언해주십시오
    - 개인정보 - 위치 사용 설명
