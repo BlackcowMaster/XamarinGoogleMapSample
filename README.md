@@ -27,11 +27,10 @@ https://open.kakao.com/o/g8lzoOm
 4. CachingNativeBitmapDescriptorFactory를 추가로 구현되어 있지만 FFImageLoading을 사용하는 경우엔 크게 필요하진 않습니다
 
 [iOS]
-App.Delegate.cs
+1. App.Delegate.cs에 다음과 같이 선언해주십시오
 -> Xamarin.FormsGoogleMaps.Init("API KEY"); // Google Maps API for iOS 생성
 
-[iOS]
-Info.plist
+2. Info.plist에서 다음과 같이 
 -> 개인정보 - 위치 상요 설명
 -> 개인정보 - 위치 사용시 사용 설명
 -> 개인정보 - 위치 항상 사용 및 위치 사용 시 설명
