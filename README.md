@@ -17,20 +17,34 @@ https://open.kakao.com/o/g8lzoOm
    - Circle은 보여지는 부분보다 크게 비율을 잡아서 그리는게 필요합니다. 원을 그린다고 해도 실제 핀들의 중심보다 작게 그립니다
    - 초심자가 보고 이해할 수 있도록 MVVM 버전과 그렇지 않은 버전을 분리했습니다
    - 현재 위치에서 재검색은 서버와 통신하신 후에 가져오고 그리고 중심점과 원, 핀 등을 그리시면 되겠습니다
-   - CustomMap이란 걸 별도로 구현하여 Android에 적용하였습니다
+   - CustomMap이란 걸 별도로 구현하여 Android에 적용하였습니다   
 
 
 
 ##### [Android]
 
 1. Manifest에 권한 설정이 되어 있으며 "APIKEY"를 구글 개발자 콘솔에서 맵 API를 발급 하신 후 교체하시면 됩니다
-   <meta-data android:name="com.google.android.geo.API_KEY" android:value="APIKEY" />
+   <pre>
+   <code>
+   { meta-data android:name="com.google.android.geo.API_KEY" android:value="APIKEY" /> }
+   </code>
+   </pre>
 
 2. MainActivity.cs 파일에서 다음과 같이 선언이 필요합니다.
-   Xamarin.FormsGoogleMaps.Init(this, saveInstanceState);
+   <pre>
+   <code>
+   { Xamarin.FormsGoogleMaps.Init(this, saveInstanceState); }
+   </code>
+   </pre>
+       
+   
    
 3. 안드로이드 프로젝트 Nuget에서 Plugin.CurrentActivity 를 다운 받고 다음과 같이 선언합니다
-   Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
+   <pre>
+   <code>
+   { Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState); }
+   </code>
+   </pre>  
    
 4. CachingNativeBitmapDescriptorFactory를 추가로 구현되어 있지만 FFImageLoading을 사용하는 경우엔 크게 필요하진 않습니다
 
