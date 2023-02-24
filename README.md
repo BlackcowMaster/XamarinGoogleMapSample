@@ -1,5 +1,7 @@
 # XamarinGoogleMapSample
 
+<img src="https://i.imgur.com/x6W9s3q.png" width="40%" height="30%" title="샘플사진" alt="Sample Image"></img>
+
 해당 프로젝트는 https://github.com/INHack20/Xamarin.Forms.GoogleMaps 를 기반으로 제작 된 샘플 프로젝트입니다
 
 실제 모든 기능을 구현하지 않았지만 누군가에겐 도움 되셨으면 좋겠습니다.
