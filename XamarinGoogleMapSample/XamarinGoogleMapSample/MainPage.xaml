@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="XamarinGoogleMapSample.MainPage">
+
+    <StackLayout Spacing="20">
+        <StackLayout.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="Background" Value="#056789"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+        </StackLayout.Resources>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="지도 기능 체험" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="ContentView 형식" x:Name="btnSample1" Clicked="btnSample1_Clicked"/>
+        <Button Text="ViewModel 방식" x:Name="btnSample2" Clicked="btnSample2_Clicked"/>
+        <Button Text="CustomMap 방식" x:Name="btnSample3" Clicked="btnSample3_Clicked"/>
+    </StackLayout>
+</ContentPage>

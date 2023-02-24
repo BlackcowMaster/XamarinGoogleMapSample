@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinGoogleMapSample.Views.Page_MVVMSample"
+             xmlns:vm="clr-namespace:XamarinGoogleMapSample.ViewModels"
+             x:DataType="vm:Page_MVVMSampleViewModel"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:Page_MVVMSampleViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <ContentView Content="{Binding CurrentMap}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

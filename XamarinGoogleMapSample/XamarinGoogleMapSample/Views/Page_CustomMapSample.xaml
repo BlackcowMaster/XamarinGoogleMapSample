@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinGoogleMapSample.Views.Page_CustomMapSample"
+             xmlns:vm="clr-namespace:XamarinGoogleMapSample.ViewModels"
+             x:DataType="vm:Page_CustomMapSampleViewModel"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:Page_CustomMapSampleViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <ContentView Content="{Binding CurrentMap}"/>
+            <Button HorizontalOptions="Center" VerticalOptions="Start" Padding="10" Margin="0,20,0,0" CornerRadius="10" BackgroundColor="#FFFFFF"
+                    x:DataType="vm:Page_CustomMapSampleViewModel" Command="{Binding CurrentLocationFindSpaceCommand}"
+                    Text="현 위치에서 다시 검색">                
+            </Button>
+
+            <StackLayout HorizontalOptions="End" VerticalOptions="Center" Spacing="10" Margin="0,0,10,10">
+                <StackLayout.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="BackgroundColor" Value="White"/>
+                        <Setter Property="Padding" Value="10"/>
+                        <Setter Property="FontSize" Value="12"/>
+                        <Setter Property="BorderColor" Value="Red"/>
+                        <Setter Property="BorderWidth" Value="2"/>
+                        <Setter Property="WidthRequest" Value="50"/>
+                    </Style>
+                </StackLayout.Resources>
+                <Button Text="확대"  Command="{Binding ZoomInCommand}"/>
+                <Button Text="축소"  Command="{Binding ZoomOutCommand}"/>
+                <Button Text="위치"  Command="{Binding MyLocationCommand}"/>
+                <Button Text="샘플1"  Command="{Binding Sample1Command}"/>
+                <Button Text="샘플2"  Command="{Binding Sample2Command}"/>
+                <Button Text="샘플3"  Command="{Binding Sample3Command}"/>
+            </StackLayout>
+
+            <Label Text="{Binding CurrentZoomLevel, StringFormat='ZOOM LV. {0}'}" HorizontalOptions="Center" VerticalOptions="End" 
+                   FontSize="12" TextColor="White" BackgroundColor="Red" Padding="10,5" Margin="0,10"/>
+
+            <Grid IsVisible="{Binding IsLoading}" BackgroundColor="#113d3d3d">
+                <ActivityIndicator IsRunning="{Binding IsLoading}"  IsEnabled="{Binding IsLoading}" Color="Red"
+                                   HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

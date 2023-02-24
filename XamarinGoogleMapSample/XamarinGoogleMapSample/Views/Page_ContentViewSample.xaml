@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinGoogleMapSample.Views.Page_ContentViewSample"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             Title="ContentView 스타일 지도 샘플">
+    <ContentPage.Content>
+        <Grid>
+            <maps:Map x:Name="map"
+                      InitialCameraUpdate="-23.68, -46.87, 13, 30, 60"
+                      VerticalOptions="FillAndExpand" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
