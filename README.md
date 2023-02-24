@@ -1,11 +1,15 @@
 # XamarinGoogleMapSample
 
 해당 프로젝트는 https://github.com/INHack20/Xamarin.Forms.GoogleMaps 를 기반으로 제작 된 샘플 프로젝트입니다
+
 실제 모든 기능을 구현하지 않았지만 누군가에겐 도움 되셨으면 좋겠습니다.
+
 MAUI 샘플에서 뵙겠습니다.
 
 궁금하신 점은 한국 자마린 & 마우이 단톡방을 이용해주십시오
 https://open.kakao.com/o/g8lzoOm
+
+
 
 [개발 참고사항]
    - Circle은 보여지는 부분보다 크게 비율을 잡아서 그리는게 필요합니다. 원을 그린다고 해도 실제 핀들의 중심보다 작게 그립니다
