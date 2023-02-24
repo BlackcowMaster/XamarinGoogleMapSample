@@ -6,10 +6,8 @@
 
 실제 모든 기능을 구현하지 않았지만 누군가에겐 도움 되셨으면 좋겠습니다.
 
-MAUI 샘플에서 뵙겠습니다.
-
 궁금하신 점은 한국 자마린 & 마우이 단톡방을 이용해주십시오
-https://open.kakao.com/o/g8lzoOm
+https://open.kakao.com/o/g8lzoOm   
 
 
 
