@@ -11,7 +11,7 @@ https://open.kakao.com/o/g8lzoOm
 
 
 
-[개발 참고사항]
+##### [개발 참고사항]
    - Circle은 보여지는 부분보다 크게 비율을 잡아서 그리는게 필요합니다. 원을 그린다고 해도 실제 핀들의 중심보다 작게 그립니다
    - 초심자가 보고 이해할 수 있도록 MVVM 버전과 그렇지 않은 버전을 분리했습니다
    - 현재 위치에서 재검색은 서버와 통신하신 후에 가져오고 그리고 중심점과 원, 핀 등을 그리시면 되겠습니다
@@ -19,7 +19,7 @@ https://open.kakao.com/o/g8lzoOm
 
 
 
-[Android]
+##### [Android]
 
 1. Manifest에 권한 설정이 되어 있으며 "APIKEY"를 구글 개발자 콘솔에서 맵 API를 발급 하신 후 교체하시면 됩니다
    <meta-data android:name="com.google.android.geo.API_KEY" android:value="APIKEY" />
@@ -34,7 +34,7 @@ https://open.kakao.com/o/g8lzoOm
 
 
 
-[iOS]
+##### [iOS]
 1. App.Delegate.cs에 다음과 같이 선언해주십시오
    - Xamarin.FormsGoogleMaps.Init("API KEY"); // Google Maps API for iOS 생성
 
