@@ -30,8 +30,8 @@ https://open.kakao.com/o/g8lzoOm
 1. App.Delegate.cs에 다음과 같이 선언해주십시오
 -> Xamarin.FormsGoogleMaps.Init("API KEY"); // Google Maps API for iOS 생성
 
-2. Info.plist에서 다음과 같이 
--> 개인정보 - 위치 상요 설명
--> 개인정보 - 위치 사용시 사용 설명
--> 개인정보 - 위치 항상 사용 및 위치 사용 시 설명
--> 개인정보 - Location Always 사용 설명
+2. Info.plist에서 다음과 같이 선언해주십시오
+- 개인정보 - 위치 사용 설명
+- 개인정보 - 위치 사용시 사용 설명
+- 개인정보 - 위치 항상 사용 및 위치 사용 시 설명
+- 개인정보 - Location Always 사용 설명
